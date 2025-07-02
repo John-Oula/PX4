@@ -228,7 +228,6 @@ then
 	hmc5883 -T -X -q start
 	iis2mdc -X -q start
 	ist8308 -X -q start
-	ist8310 -X -q start
 	if ! lis3mdl -X -q start
 	then
 		lis3mdl -X -q -a 0x1c start
@@ -236,6 +235,10 @@ then
 	qmc5883l -X -q start
 	qmc5883p -X -q start
 	rm3100 -X -q start
+
+	# standard Holybro Pixhawk 4 or CUAV V5 GPS/compass puck (with lights, safety button, and buzzer)
+	# if the ist8310 has a different rotation, start it in rc.board_sensors
+	ist8310 -X -R 10 -q start
 
 	# start last (wait for possible icm20948 passthrough mode)
 	ak09916 -X -q start
