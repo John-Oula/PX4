@@ -1,0 +1,244 @@
+{
+  "fileType": "Plan",
+  "geoFence": {
+    "circles": [],
+    "polygons": [],
+    "version": 2
+  },
+  "rallyPoints": {
+    "points": [],
+    "version": 2
+  },
+  "version": 1,
+  "groundStation": "QGroundControl",
+  "mission": {
+    "cruiseSpeed": 15,
+    "firmwareType": 12,
+    "hoverSpeed": 5,
+    "items": [
+      {
+        "AMSLAltAboveTerrain": 0,
+        "Altitude": 95,
+        "AltitudeMode": 1,
+        "autoContinue": true,
+        "command": 22,
+        "doJumpId": 0,
+        "frame": 3,
+        "params": [
+          0,
+          0,
+          0,
+          0,
+          -74.013866666666672,
+          40.707598540145987,
+          95
+        ],
+        "type": "SimpleItem"
+      },
+      {
+        "AMSLAltAboveTerrain": 0,
+        "Altitude": 95,
+        "AltitudeMode": 1,
+        "autoContinue": true,
+        "command": 16,
+        "doJumpId": 1,
+        "frame": 3,
+        "params": [
+          0,
+          5,
+          0,
+          0,
+          -74.013866666666672,
+          40.707598540145987,
+          95
+        ],
+        "type": "SimpleItem",
+        "mission_metadata": {
+          "task_id": 5,
+          "vehicle_id": 5,
+          "expected_time": 11.43,
+          "start_time": 11.43,
+          "waypoint_index": 1,
+          "selected_waypoint_index": 1,
+          "is_start_point": true,
+          "is_end_point": false,
+          "original_coords": [
+            40.707598540145987,
+            -74.013866666666672
+          ],
+          "total_path_waypoints": 117,
+          "selected_waypoints_count": 5
+        }
+      },
+      {
+        "AMSLAltAboveTerrain": 0,
+        "Altitude": 95,
+        "AltitudeMode": 1,
+        "autoContinue": true,
+        "command": 16,
+        "doJumpId": 2,
+        "frame": 3,
+        "params": [
+          0,
+          5,
+          0,
+          0,
+          -74.013866666666672,
+          40.707551094890512,
+          95
+        ],
+        "type": "SimpleItem",
+        "mission_metadata": {
+          "task_id": 5,
+          "vehicle_id": 4,
+          "expected_time": 11.6875,
+          "start_time": 11.43,
+          "waypoint_index": 2,
+          "selected_waypoint_index": 2,
+          "is_start_point": false,
+          "is_end_point": false,
+          "original_coords": [
+            40.707551094890512,
+            -74.013866666666672
+          ],
+          "total_path_waypoints": 117,
+          "selected_waypoints_count": 5
+        }
+      },
+      {
+        "AMSLAltAboveTerrain": 0,
+        "Altitude": 95,
+        "AltitudeMode": 1,
+        "autoContinue": true,
+        "command": 16,
+        "doJumpId": 3,
+        "frame": 3,
+        "params": [
+          0,
+          5,
+          0,
+          0,
+          -74.013933333333327,
+          40.704846715328472,
+          95
+        ],
+        "type": "SimpleItem",
+        "mission_metadata": {
+          "task_id": 5,
+          "vehicle_id": 4,
+          "expected_time": 11.945,
+          "start_time": 11.43,
+          "waypoint_index": 59,
+          "selected_waypoint_index": 3,
+          "is_start_point": false,
+          "is_end_point": false,
+          "original_coords": [
+            40.704846715328472,
+            -74.013933333333327
+          ],
+          "total_path_waypoints": 117,
+          "selected_waypoints_count": 5
+        }
+      },
+      {
+        "AMSLAltAboveTerrain": 0,
+        "Altitude": 95,
+        "AltitudeMode": 1,
+        "autoContinue": true,
+        "command": 16,
+        "doJumpId": 4,
+        "frame": 3,
+        "params": [
+          0,
+          5,
+          0,
+          0,
+          -74.013066666666674,
+          40.692083941605837,
+          95
+        ],
+        "type": "SimpleItem",
+        "mission_metadata": {
+          "task_id": 5,
+          "vehicle_id": 4,
+          "expected_time": 12.2025,
+          "start_time": 11.43,
+          "waypoint_index": 116,
+          "selected_waypoint_index": 4,
+          "is_start_point": false,
+          "is_end_point": false,
+          "original_coords": [
+            40.692083941605837,
+            -74.013066666666674
+          ],
+          "total_path_waypoints": 117,
+          "selected_waypoints_count": 5
+        }
+      },
+      {
+        "AMSLAltAboveTerrain": 0,
+        "Altitude": 95,
+        "AltitudeMode": 1,
+        "autoContinue": true,
+        "command": 16,
+        "doJumpId": 5,
+        "frame": 3,
+        "params": [
+          0,
+          5,
+          0,
+          0,
+          -74.013066666666674,
+          40.691419708029194,
+          95
+        ],
+        "type": "SimpleItem",
+        "mission_metadata": {
+          "task_id": 5,
+          "vehicle_id": 4,
+          "expected_time": 12.459999999999999,
+          "start_time": 11.43,
+          "waypoint_index": 117,
+          "selected_waypoint_index": 5,
+          "is_start_point": false,
+          "is_end_point": true,
+          "original_coords": [
+            40.691419708029194,
+            -74.013066666666674
+          ],
+          "total_path_waypoints": 117,
+          "selected_waypoints_count": 5
+        }
+      }
+    ],
+    "plannedHomePosition": [
+      -74.013866666666672,
+      40.707598540145987,
+      0
+    ],
+    "vehicleType": 2,
+    "version": 2
+  },
+  "metadata": {
+    "task_id": 5,
+    "vehicle_id": 4,
+    "task_start_time": 11.43,
+    "task_complete_time": 12.46,
+    "vehicle_return_time": 13.48,
+    "vehicle_available_time": 14.48,
+    "delivery_time": 1.03,
+    "maintenance_time": 1,
+    "coordinate_system": "real_world_latlon",
+    "generation_time": "26-Jun-2025 00:37:48",
+    "start_point": [
+      18,
+      393
+    ],
+    "end_point": [
+      30,
+      52
+    ],
+    "number_of_waypoints": 117,
+    "path_source": "realworld_path"
+  }
+}
