@@ -243,7 +243,7 @@ class FleetLauncher:
             try:
                 px4_process = subprocess.Popen([
                     f"{self.px4_dir}/build/px4_sitl_default/bin/px4",
-                    "-i", str(vehicle_id)  # Instance ID
+                    "-i", str(vehicle_id-1)  # Instance ID
                 ], cwd=self.px4_dir, env=env,
                     stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 

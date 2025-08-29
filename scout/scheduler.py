@@ -27,16 +27,16 @@ class MultiUAVScheduler:
             return None
 
         print(f"[{vehicle_id}] Waiting for home position...")
-        while True:
-            msg = connection.recv_match(type='HOME_POSITION', blocking=True, timeout=1)
-            if msg:
-                lat = msg.latitude * 1e-7
-                lon = msg.longitude * 1e-7
-                alt = msg.altitude * 1e-3
-                print(f"[{vehicle_id}] Home position set: Lat {lat}, Lon {lon}, Alt {alt}")
-                break
-            else:
-                time.sleep(0.5)
+        # while True:
+        #     msg = connection.recv_match(type='HOME_POSITION', blocking=True, timeout=1)
+        #     if msg:
+        #         lat = msg.latitude * 1e-7
+        #         lon = msg.longitude * 1e-7
+        #         alt = msg.altitude * 1e-3
+        #         print(f"[{vehicle_id}] Home position set: Lat {lat}, Lon {lon}, Alt {alt}")
+        #         break
+        #     else:
+        #         time.sleep(0.5)
         return connection
 
     def start_mission(self, connection, vehicle_id):
@@ -108,6 +108,7 @@ class MultiUAVScheduler:
                     connection.target_system,
                     connection.target_component
                 )
+                msg = connection.recv_match(blocking=True, timeout=5)
                 count_msg = connection.recv_match(type='MISSION_COUNT', blocking=True, timeout=5)
                 if count_msg:
                     break
@@ -161,8 +162,8 @@ if __name__ == "__main__":
         12: 14543
     }
     scheduler = MultiUAVScheduler(
-        '/root/PX4/scout/data/distribution.json',
-        '/root/PX4/scout/missions',
+        '/home/sz6/Desktop/px4-scout/scout/data/distribution.json',
+        '/home/sz6/Desktop/px4-scout/scout/missions',
         px4_ports
     )
     scheduler.start_all()
